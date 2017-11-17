@@ -21,6 +21,10 @@ public class EverythingReference {
 		char myChar = 'a';//chars can hold individual character values
 		myChar = '5';//These range from letters to numbers to special characters
 		
+		int myNewInt;//If we want, we can declare a variable without assigning it a value
+		//However, if we want to use this variable for anything, we'll need to
+		//assign it a value at some point
+		
 		//We learned that we can print out things to the console using the System.out.println() method
 		System.out.println("Hello World!");//Notice we pass in a string as our argument
 		String helloWorld = "Hello World!";//This means if we use a variable...
@@ -176,5 +180,77 @@ public class EverythingReference {
 		
 		//Just like with for loops, make sure your loop is designed so that it will eventually stop running
 	}
-
+	
+	///////////
+	//Methods//
+	///////////
+	//We can use methods whenever we want to reuse code without copy-pasting it
+	//The methods consist of 2 main things:
+	//The method header, where the method is declared an information about it is given
+	//The method body, where we write code that will run whenever our method is called
+	
+	//Method headers have 5 distinct parts that we need to consider whenever making a method
+	//Visibility modifier-this determines where the method can be called from.
+	//There are 4 visibility modifiers:
+	//private - can only be called within the same class
+	//[no modifier] - private + can be called from the same package
+	//protected - [no modifier] + can be called by subclasses
+	//public - can be called from anywhere
+	
+	//The two primary modifiers we will every use are public and private
+	//Don't worry too much about this now if you don't understand it
+	
+	//Static/non-static if a method is declared as static, then it can be called
+	//without an instance of the class.  Non-static methods can not be called from
+	//within a static method (without an associated object)
+	//To declare a method as static, put 'static' in the method header
+	
+	//Return type - this is what type of variable the method will return.
+	//This can be any of the variable types we have talked about already, 
+	//any object that we make, or void if the method will not return anything
+	//If the method has a return type, there needs to be a return statement in the method
+	
+	//Method name - this is how we will call the method in our code.
+	//Method names should be descriptive, and follow the same naming conventions
+	//that variables do (first letter lowercase, then camel case)
+	//Be wary of declaring two methods with the same name.  It can work under 
+	//specific conditions but make sure you know what you're doing
+	
+	//Paramter list - this is the list of arguments anyone will have to pass in when
+	//calling our method.  For example, a method that adds two numbers will want
+	//to take in two ints as arguments.  The names we give our parameters are arbitrary
+	//and will only be used within our method body.
+	
+	//For example, the main method has the header:
+	//public static void main(String[] args)
+	//This means it is a method that is visible anywhere,
+	//not tied to an instance of the class,
+	//doesn't return anything,
+	//has the name main,
+	//and takes an argument called args of type String[]
+	
+	//And this method:
+	//public static int add(int num1, int num2)
+	//Is visible anywhere,
+	//is not tied to an instance of the class,
+	//returns an int,
+	//has the name add,
+	//and takes in two int arguments which will be called num1 and num2 in the method body
+	
+	
+	//The method body is where we put all of our code for the method.
+	//For example, all of our code above is in the method body for the main method.
+	//For the add method mentioned above, the method body would look like:
+	/*
+	 * public static void add(int num1, int num2) {
+	 * 		return num1 + num2;
+	 * }
+	 */
+	//The return statement will cause the method to evaluate to num1 + num2.
+	//So in our code:
+	//int mySum = add(5, 7);
+	//Will assign the value of 12 to mySum
+	//Notice that when we call methods, we always have parentheses afterwards
+	//where we put our arguments.
+	
 }
