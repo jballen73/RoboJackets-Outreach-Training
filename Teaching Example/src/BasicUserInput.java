@@ -13,7 +13,7 @@ public class BasicUserInput {
 		System.out.println("You entered: " + myNum);
 		//Asks the user for more input, a word this time
 		System.out.println("Now enter a word: ");
-		//This is supposed to put the word in another String varible, but...
+		//This is supposed to put the word in another String variable, but...
 		String myWord = input.nextLine();
 		//It doesn't!  The next line immediately runs and nothing is stored in the variable.
 		//What happened is that when you entered the number earlier, you didn't just enter a number.
