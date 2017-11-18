@@ -1,4 +1,6 @@
-
+/*
+ * This file contains the solutions for the example problems that were given 11/11 and 11/18
+ */
 public class Example {
 
 	public static void main(String[] args) {
@@ -8,7 +10,28 @@ public class Example {
 //		fibonacci();
 //		fizzBuzz();
 //		System.out.println(reverseString("My name is Jacob"));
+		
+		for(int i = 1; i < 10; i++) {
+			System.out.println("Triangle with " + i + " rows:");
+			triangle(i);
+		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 public static void triangle(int rows) {
 for (int i = 1; i <= rows; i++) {
 	for (int j = 0; j < i; j++) {
