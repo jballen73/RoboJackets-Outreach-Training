@@ -2,8 +2,9 @@ import java.util.Scanner;//Note the import
 public class BasicUserInput {
 
 	public static void main(String[] args) {
-		//Initializing the Scanner that we will use to read the inputs
-		Scanner input = new Scanner(System.in);
+		//Because a Scanner is an object, we need to create it before we can use it
+		//Initializing the Scanner that we will use to read the inputs:
+		Scanner input = new Scanner(System.in);//Because Scanner is not in java.lang, we need to import it
 		//Asking for input from the user
 		System.out.print("Enter a number: ");
 		//Taking the next number that is entered and storing it in a variable

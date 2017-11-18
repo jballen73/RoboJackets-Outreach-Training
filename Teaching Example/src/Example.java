@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * This file contains the solutions for the example problems that were given 11/11 and 11/18
  */
@@ -11,10 +13,16 @@ public class Example {
 //		fizzBuzz();
 //		System.out.println(reverseString("My name is Jacob"));
 		
-		for(int i = 1; i < 10; i++) {
-			System.out.println("Triangle with " + i + " rows:");
-			triangle(i);
-		}
+//		Scanner input = new Scanner(System.in);
+//		System.out.println("Enter a number");
+//		int myNum = input.nextInt();
+//		System.out.println(myNum);
+//		System.out.print("Enter a String: ");
+//		input.nextLine();
+//		String myString = input.nextLine();
+//		System.out.println(myString);
+//		System.out.println("This line");
+		triangleInput();
 	}
 	
 	
@@ -54,7 +62,11 @@ public static void triangleReverse(int rows) {
 	}
 	
 }
-
+public static void triangleInput() {
+	System.out.print("Enter a number of rows: ");
+	Scanner input = new Scanner(System.in);
+	triangle(input.nextInt());
+}
 public static void fibonacci() {
 	int num1 = 0;
 	int num2 = 1;
