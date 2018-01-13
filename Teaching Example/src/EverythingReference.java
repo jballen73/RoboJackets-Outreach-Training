@@ -327,6 +327,6 @@ public class EverythingReference {
 	//int mySum = add(5, 7);
 	//Will assign the value of 12 to mySum
 	//Notice that when we call methods, we always have parentheses afterwards
-	//where we put our arguments.
+	//where we put our arguments
 	
 }
